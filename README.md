@@ -1,3 +1,12 @@
+<p align="center">
+    <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">
+        <img alt=".gitignore Generator" src="./images/icon.png">
+    </a>
+</p>
+<p align="center">
+    <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">View in Visual Studio Code Marketplace</a>
+</p>
+
 # .gitignore Generator for _Visual Studio Code_
 
 Lets you easily and quickly generate `.gitignore` file for your project using [gitignore.io](https://gitignore.io) API.
@@ -18,6 +27,10 @@ And what about other files and directories used by various frameworks and tools?
 That's where [gitignore.io](https://gitignore.io) API comes in handy. It allows you to pick and choose tools, frameworks or operating system you're working with and it generates `.gitignore` file containing all the exclusions you need for those. You can, of course, use the website manually and then save the generated `.gitignore` file but leaving your editor to do just that is counterproductive.
 
 **Using this extension for _Visual Studio Code_ you can achieve exactly that without ever leaving the editor (or even touching a mouse).**
+
+## Installation
+
+To install this extension go to `View->Extensions` and search for `.gitignore Generator`. Next click **Install** and then **Reload**.
 
 ## Usage
 
