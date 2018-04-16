@@ -13,7 +13,7 @@
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#373737",
-        "theme": "light"
+        "theme": "dark"
     },
     "repository": {
         "type": "git",
