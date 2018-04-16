@@ -1,11 +1,13 @@
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">
-        <img alt=".gitignore Generator" src="./images/icon.png">
+        <img alt=".gitignore Generator" src="https://github.com/piotrpalarz/vscode-gitignore-generator/raw/master/images/icon.png">
     </a>
 </p>
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">View in Visual Studio Code Marketplace</a>
 </p>
+
+---
 
 # .gitignore Generator for _Visual Studio Code_
 
@@ -72,7 +74,7 @@ Currently only one command is available:
 
 *   `extension.gitignoreGenerate` (same as **Generate .gitignore File** in Command Palette)
 
-By default, it's not bound to any keyboard shorcut but you're free to do so.
+By default, it's not bound to any keyboard shortcut but you're free to do so.
 
 ## Roadmap
 
