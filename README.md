@@ -3,8 +3,15 @@
         <img width="192" src="https://github.com/piotrpalarz/vscode-gitignore-generator/raw/master/images/readme/icon_big.png" alt=".gitignore Generator">
     </a>
 </p>
+
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">View in Visual Studio Marketplace</a>
+</p>
+
+<p align="center">
+    <img src="https://vsmarketplacebadge.apphb.com/version/piotrpalarz.vscode-gitignore-generator.svg?label=Version" alt=".gitignore Generator version">
+    <img src="https://vsmarketplacebadge.apphb.com/installs/piotrpalarz.vscode-gitignore-generator.svg?label=Installs" alt=".gitignore Generator installs">
+    <img src="https://vsmarketplacebadge.apphb.com/rating-short/piotrpalarz.vscode-gitignore-generator.svg?label=Rating" alt=".gitignore Generator rating">
 </p>
 
 ---
