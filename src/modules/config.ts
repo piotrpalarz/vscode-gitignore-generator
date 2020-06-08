@@ -1,4 +1,4 @@
-export const API_URL = "https://www.gitignore.io/api";
+export const API_URL = "https://www.toptal.com/developers/gitignore/api";
 export const FILE_NAME = ".gitignore";
 
 export const MESSAGES = {

@@ -2,14 +2,21 @@
     "name": "vscode-gitignore-generator",
     "displayName": ".gitignore Generator",
     "description": "Generate .gitignore file using gitignore.io API",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "piotrpalarz",
     "license": "SEE LICENSE IN LICENSE",
     "engines": {
         "vscode": "^1.22.0"
     },
-    "categories": ["SCM Providers"],
-    "keywords": ["git", "gitignore", "gitignore.io", "gitignore generator"],
+    "categories": [
+        "SCM Providers"
+    ],
+    "keywords": [
+        "git",
+        "gitignore",
+        "gitignore.io",
+        "gitignore generator"
+    ],
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#373737",
@@ -21,10 +28,11 @@
     },
     "homepage": "https://github.com/piotrpalarz/vscode-gitignore-generator",
     "bugs": {
-        "url":
-            "https://github.com/piotrpalarz/vscode-gitignore-generator/issues"
+        "url": "https://github.com/piotrpalarz/vscode-gitignore-generator/issues"
     },
-    "activationEvents": ["onCommand:extension.gitignoreGenerate"],
+    "activationEvents": [
+        "onCommand:extension.gitignoreGenerate"
+    ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
