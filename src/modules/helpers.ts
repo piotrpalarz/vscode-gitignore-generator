@@ -1,11 +1,22 @@
 import * as os from "os";
-import { window } from "vscode";
 import { readFile } from "./filesystem";
 import { getData } from "./http";
-import { API_URL, BANNER, USER_RULES } from "./config";
+import { API_URL, ALTERNATIVE_API_URL, BANNER, USER_RULES } from "./config";
+
+export function hitAntiDdos(value: string | null) {
+    if(value === null) {
+        return false;
+    }
+
+    return (/^<!DOCTYPE.*>/gi).test(value.trim());
+}
 
 export async function getList(path: string | null, keepCurrent: boolean) {
-    const data = await getData(`${API_URL}/list`);
+    let data = await getData(`${API_URL}/list`);
+
+    if(hitAntiDdos(data)) {
+        data = await getData(`${ALTERNATIVE_API_URL}/list`);
+    }
 
     if (data === null) {
         return null;

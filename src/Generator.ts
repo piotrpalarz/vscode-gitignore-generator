@@ -1,6 +1,6 @@
 import * as path from "path";
 import { window, workspace } from "vscode";
-import { API_URL, FILE_NAME, MESSAGES } from "./modules/config";
+import { API_URL, ALTERNATIVE_API_URL, FILE_NAME, MESSAGES } from "./modules/config";
 import {
     getFolderOption,
     getItemsOption,
@@ -10,7 +10,7 @@ import {
 } from "./modules/ui";
 import { fileExists, hasFolder, writeFile } from "./modules/filesystem";
 import { getData } from "./modules/http";
-import { generateFile, getList } from "./modules/helpers";
+import { generateFile, getList, hitAntiDdos } from "./modules/helpers";
 
 export default class Generator {
     private folders = workspace.workspaceFolders;
@@ -79,7 +79,11 @@ export default class Generator {
     private async generate() {
         const message = window.setStatusBarMessage(MESSAGES.generating);
 
-        const data = await getData(`${API_URL}/${this.selected.join(",")}`);
+        let data = await getData(`${API_URL}/${this.selected.join(",")}`);
+
+        if(hitAntiDdos(data)) {
+            data = await getData(`${ALTERNATIVE_API_URL}/${this.selected.join(",")}`);
+        }
 
         if (data === null) {
             return window.showErrorMessage(MESSAGES.network_error);
