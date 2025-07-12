@@ -2,7 +2,7 @@
     "name": "vscode-gitignore-generator",
     "displayName": ".gitignore Generator",
     "description": "Generate .gitignore file using gitignore.io API",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "piotrpalarz",
     "license": "SEE LICENSE IN LICENSE",
     "engines": {

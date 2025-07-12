@@ -6,17 +6,25 @@
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">View in Visual Studio Marketplace</a>
+    <br>
+    <a href="https://open-vsx.org/extension/piotrpalarz/vscode-gitignore-generator">View in Open VSX Registry</a>
 </p>
 
 <p align="center">
-    <img src="https://vsmarketplacebadge.apphb.com/version/piotrpalarz.vscode-gitignore-generator.svg?label=Version" alt=".gitignore Generator version">
-    <img src="https://vsmarketplacebadge.apphb.com/installs/piotrpalarz.vscode-gitignore-generator.svg?label=Installs" alt=".gitignore Generator installs">
-    <img src="https://vsmarketplacebadge.apphb.com/rating-short/piotrpalarz.vscode-gitignore-generator.svg?label=Rating" alt=".gitignore Generator rating">
+    <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">
+        <img src="https://img.shields.io/visual-studio-marketplace/v/piotrpalarz.vscode-gitignore-generator?label=Version&color=blue" alt="Version">
+    </a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">
+        <img src="https://img.shields.io/visual-studio-marketplace/i/piotrpalarz.vscode-gitignore-generator?label=Installs&color=green" alt="Installs">
+    </a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=piotrpalarz.vscode-gitignore-generator">
+        <img src="https://img.shields.io/visual-studio-marketplace/r/piotrpalarz.vscode-gitignore-generator?label=Rating&color=yellow" alt="Rating">
+    </a>
 </p>
 
 ---
 
-# .gitignore Generator for _Visual Studio Code_
+# .gitignore Generator for VS Code and Cursor
 
 Lets you easily and quickly generate `.gitignore` file for your project using [gitignore.io](https://gitignore.io) API.
 
@@ -35,7 +43,7 @@ And what about other files and directories used by various frameworks and tools?
 
 That's where [gitignore.io](https://gitignore.io) API comes in handy. It allows you to pick and choose tools, frameworks or operating system you're working with and it generates `.gitignore` file containing all the exclusions you need for those. You can, of course, use the website manually and then save the generated `.gitignore` file but leaving your editor to do just that is counterproductive.
 
-**Using this extension for _Visual Studio Code_ you can achieve exactly that without ever leaving the editor (or even touching a mouse).**
+**Using this extension for _Visual Studio Code_ or _Cursor_ you can achieve exactly that without ever leaving the editor (or even touching a mouse).**
 
 ## Installation
 
@@ -84,14 +92,6 @@ Currently only one command is available:
 *   `extension.gitignoreGenerate` (same as **Generate .gitignore File** in Command Palette)
 
 By default, it's not bound to any keyboard shortcut but you're free to do so.
-
-## Roadmap
-
-Although this extension works well I'm planning to add some extra features to it in the future. Some of them are:
-
-*   smart picker based on your project's files (i.e. checks **node** if you have `package.json` file)
-*   custom rules picker (to save your own set of rules as an item to choose later)
-*   `.gitignore` syntax highlighting
 
 ## Issues
 
